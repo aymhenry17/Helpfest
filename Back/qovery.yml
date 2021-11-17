@@ -1,0 +1,14 @@
+application:
+  name: my-application
+  project: my-project
+  publicly_accessible: true
+databases:
+- type: mysql
+  version: "8.0"
+  name: Helpfest
+routers:
+- name: main
+  routes:
+  - application_name: my-application
+    paths:
+    - /
